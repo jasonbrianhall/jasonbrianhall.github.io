@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zenamp - A feature-rich audio player combining modern format support with nostalgic MIDI synthesis, karaoke capabilities, and 40+ visualizations.">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>Zenamp - The Ultimate Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo" id="logoAnimated">
+                    <img src="gtk3/icon.png" alt="Zenamp Logo" class="logo-img">
+                </div>
+                <div class="logo-text">Zenamp</div>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#visualizations">Visualizations</a>
+                <a href="#specs">Specifications</a>
+                <a href="#download">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>The Ultimate Audio Player</h1>
+            <p class="hero-subtitle">
+                Experience music like never before with 30+ mesmerizing visualizations, MIDI synthesis, 
+                karaoke support, and format support for everything from WAV to MIDI.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/jasonbrianhall/zenamp/releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    Download Now
+                </a>
+                <a href="https://github.com/jasonbrianhall/zenamp" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features reveal">
+            <h2 class="section-title">Why Choose Zenamp?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3>🎨 30+ Visualizations</h3>
+                    <p>From classic waveforms to trippy fractals, mind-bending kaleidoscopes to AI played games. Each visualization responds dynamically to your music, creating a unique visual experience every time.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🎛️ Universal Format Support</h3>
+                    <p>Play everything: WAV, FLAC, MP3, OGG, Opus, M4A, AAC, WMA, AIFF, MIDI files, CD+G karaoke tracks, and LRC lyrics. Powered by libavcodec for maximum compatibility.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🎹 MIDI & Synthesis</h3>
+                    <p>Relive the golden age of computer music with authentic OPL3 FM synthesis. Play MIDI files with full support for real-time synthesis and frame-accurate playback synchronization.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🎤 Karaoke Mode</h3>
+                    <p>Enjoy karaoke with CD+G disc support and synchronized LRC lyrics display. Perfect for sing-alongs and building your personal karaoke collection.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>⚡ Lightweight & Fast</h3>
+                    <p>Uses only 30-150 MB of RAM during playback with under 1% idle CPU usage. Minimize the window and overhead drops to just 3%. Built in C++ with SDL2 and GTK3.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>🔧 Open Source</h3>
+                    <p>Full MIT License. Active development on GitHub with community contributions welcome. Automated builds for both Linux and Windows via GitHub Actions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualizations Section -->
+ <section id="visualizations" class="visualizations reveal">
+            <h2 class="section-title">40+ Mind-Bending Visualizations</h2>
+            <div class="vis-grid">
+                <div class="vis-item" data-tooltip="Analog clock with hands moving in rhythm with the music">⏰ Analog Clock</div>
+                <div class="vis-item" data-tooltip="Animated birthday cake with candles flickering to the rhythm">🎂 Birthday Cake</div>
+                <div class="vis-item" data-tooltip="Stacking blocks that build and cascade based on audio beats">🧱 Block Stack</div>
+                <div class="vis-item" data-tooltip="Bouncy balls simulating physics and colliding with circle; ball gets larger when colliding">⚽ Bouncy Balls</div>
+                <div class="vis-item" data-tooltip="Checkers game where pieces move before ready based on audio characteristics">♟️ Beat Checkers</div>
+                <div class="vis-item" data-tooltip="Chess game where pieces move before ready based on audio characteristics">⚫ Beat Chess</div>
+                <div class="vis-item" data-tooltip="Floating bubbles that grow, shrink, and move with the beat">🫧 Bubbles</div>
+                <div class="vis-item" data-tooltip="Circular visualization with audio data radiating from the center">⭕ Circle</div>
+                <div class="vis-item" data-tooltip="Animated parrot that dances and bobs to the beat">🦜 Dancing Parrot</div>
+                <div class="vis-item" data-tooltip="Digital clock display synchronized with audio playback">🕐 Digital Clock</div>
+                <div class="vis-item" data-tooltip="Double helix structures that twist and pulse with the music">🧬 DNA Helix (x2)</div>
+                <div class="vis-item" data-tooltip="Glowing eye visualization inspired by a certain Tolkien book">👁️ Eye of Sauron</div>
+                <div class="vis-item" data-tooltip="Organic fractal bloom patterns that grow and evolve with audio">🌸 Fractal Bloom</div>
+                <div class="vis-item" data-tooltip="Fast Fourier Transform visualization showing frequency spectrum analysis">🔬 Fourier Transform</div>
+                <div class="vis-item" data-tooltip="Fireworks explosions triggered by audio peaks and beats">✨ Fireworks</div>
+                <div class="vis-item" data-tooltip="Shows frequency distribution with vertical bars responding to different audio frequencies">📊 Frequency Bars</div>
+                <div class="vis-item" data-tooltip="Symmetrical kaleidoscope patterns that shift with the music">🔮 Kaleidoscope</div>
+                <div class="vis-item" data-tooltip="Infinitely complex fractal patterns that zoom and scroll with the music">🎨 Mandelbrot Fractal</div>
+                <div class="vis-item" data-tooltip="Matrix-style falling characters synchronized with the audio">🎬 Matrix Rain</div>
+                <div class="vis-item" data-tooltip="Classic bomb avoid game">💣 Minesweeper</div>
+                <div class="vis-item" data-tooltip="Relive the ball bouncing classic atari game">⚪ Pong</div>
+                <div class="vis-item" data-tooltip="Classic oscilloscope-style visualization showing audio signal patterns">📡 Oscilloscope</div>
+                <div class="vis-item" data-tooltip="Race visualization between a rabbit and turtle following audio cues">🐰 Rabbit/Turtle</div>
+                <div class="vis-item" data-tooltip="Radial waves expanding outward in circular patterns">🌊 Radial Wave</div>
+                <div class="vis-item" data-tooltip="Ripple waves emanating from the center in response to audio">〰️ Ripples</div>
+                <div class="vis-item" data-tooltip="Robot character that chases patterns determined by the audio">🤖 Robot Chaser</div>
+                <div class="vis-item" data-tooltip="Sudoku puzzle generator/solver animated with the beat">🧩 Sudoku Solver</div>
+                <div class="vis-item" data-tooltip="Cascading symmetrical patterns creating mesmerizing visual effects">🌈 Symmetry Cascade</div>
+                <div class="vis-item" data-tooltip="Tower of Hanoi puzzle animated with synchronized audio timing">🗼 Tower of Hanoi</div>
+                <div class="vis-item" data-tooltip="Psychedelic frequency bars with colorful transformations and distortions">🌀 Trippy Bars</div>
+                <div class="vis-item" data-tooltip="Tunnel-like wormhole effect with depth and motion">🌌 Wormhole</div>
+                <div class="vis-item" data-tooltip="Displays the raw waveform of the audio in real-time, showing amplitude over time">🌊 Waveform</div>
+                <div class="vis-item" data-tooltip="Real-time volume meter showing audio levels across channels">📈 Volume Meter</div>
+            </div>
+            <p class="vis-tips">
+                💡 Press F9 to toggle fullscreen • Q to cycle next • A to cycle previous • Adjust sensitivity slider for optimal response
+            </p>
+        </section>
+
+        <!-- Specifications Section -->
+        <section id="specs" class="specs reveal">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-box">
+                    <h4>🎵 Format Support</h4>
+                    <ul>
+                        <li>Direct: WAV, AIFF</li>
+                        <li>Lossless: FLAC</li>
+                        <li>Compressed: MP3, OGG, Opus, M4A, AAC, WMA</li>
+                        <li>Karaoke: CD+G, LRC</li>
+                        <li>Synthesis: MIDI</li>
+                        <li>Generic: libavcodec supported (or native support for Windows)</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h4>📊 Performance</h4>
+                    <ul>
+                        <li>Memory: 30-150 MB typical</li>
+                        <li>Idle CPU: &lt;1%</li>
+                        <li>Playback CPU: 10-20%</li>
+                        <li>Chess CPU: ~100% (multi-threaded)</li>
+                        <li>Minimized: ~3%</li>
+                        <li>Max file: 2+ hours tested</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h4>🔧 Architecture</h4>
+                    <ul>
+                        <li>UI: GTK3</li>
+                        <li>Audio: SDL2</li>
+                        <li>Mixing: SDL2_mixer</li>
+                        <li>Language: C++11+</li>
+                        <li>Platform: Linux, Windows</li>
+                        <li>License: MIT</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h4>⚙️ Features</h4>
+                    <ul>
+                        <li>Virtual File System (RAM cached)</li>
+                        <li>Real-time FFT analysis</li>
+                        <li>Butterworth equalizer filters</li>
+                        <li>OPL3 FM synthesis</li>
+                        <li>Frame-accurate sync</li>
+                        <li>DPI-aware rendering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="format-title">Supported Audio Formats</h3>
+            <div class="formats">
+                <span class="format-badge">WAV</span>
+                <span class="format-badge">FLAC</span>
+                <span class="format-badge">MP3</span>
+                <span class="format-badge">OGG Vorbis</span>
+                <span class="format-badge">Opus</span>
+                <span class="format-badge">M4A/AAC</span>
+                <span class="format-badge">WMA</span>
+                <span class="format-badge">AIFF</span>
+                <span class="format-badge">MIDI</span>
+                <span class="format-badge">CD+G</span>
+                <span class="format-badge">LRC</span>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="features reveal" style="text-align: center;">
+            <h2 class="section-title">Get Started</h2>
+            <p class="download-text">
+                Available for Linux and Windows. Builds automatically created via GitHub Actions.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/jasonbrianhall/zenamp/releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    Download Releases
+                </a>
+                <a href="https://github.com/jasonbrianhall/zenamp" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                    GitHub Repository
+                </a>
+            </div>
+            <p class="build-instruction">
+                💻 Quick Build (Linux): <code>git clone https://github.com/jasonbrianhall/zenamp && cd zenamp/gtk3 && make && ./build/linux/zenamp</code>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Zenamp</h4>
+                <p>A feature-rich audio player combining modern convenience with retro authenticity. Built with C++, SDL2, and GTK3.</p>
+                <div class="social-links">
+                    <a href="https://github.com/jasonbrianhall/zenamp" title="GitHub" target="_blank" rel="noopener noreferrer">🐙</a>
+                    <a href="https://buymeacoffee.com/jasonbrianhall" title="Buy Me a Coffee" target="_blank" rel="noopener noreferrer">☕</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#features">Features</a>
+                <a href="#visualizations">Visualizations</a>
+                <a href="#specs">Specifications</a>
+                <a href="https://github.com/jasonbrianhall/zenamp/issues" target="_blank" rel="noopener noreferrer">Report Issues</a>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <p>Star this repo if Zenamp brings joy to your music listening!</p>
+                <p>Contributions welcome: bug fixes, new visualizations, format support.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zenamp • MIT License • Made with passion for audio enthusiasts</p>
+            <p>⭐ <a href="https://github.com/jasonbrianhall/zenamp" target="_blank" rel="noopener noreferrer">Star on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
